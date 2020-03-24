@@ -22,15 +22,56 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.26" />
 
-    <fragment
-        android:id="@+id/playButtons_fragment"
-        android:name="io.github.liziscoding.memoryrefactored.ChoiceButtonFragment"
-        android:layout_width="match_parent"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:padding="20dp"
+        android:text="@string/play_button"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
-        app:layout_constraintVertical_bias="0.19999999" />
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="1.5dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/cardNumberSwitch"
+        style="@style/MySwitch.control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        android:text="@string/cards_text"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/playButton"
+        app:layout_constraintEnd_toStartOf="@+id/playButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:showText="true"
+        app:switchTextAppearance="@style/MySwitch.text" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/cardImageSwitch"
+        style="@style/MySwitch.control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/playButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:showText="true"
+        app:switchTextAppearance="@style/MySwitch.text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

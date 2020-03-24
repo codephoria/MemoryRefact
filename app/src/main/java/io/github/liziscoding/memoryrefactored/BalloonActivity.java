@@ -16,10 +16,11 @@ public class BalloonActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_balloon);
         balloonLayout = findViewById(R.id.balloonLayout);
-        balloonLayout.animate().translationY(-3000).setDuration(13000).withEndAction(new Runnable() {
+        balloonLayout.animate().translationY(-3000).setDuration(15000).withEndAction(new Runnable() {
             @Override
             public void run() {
-
+                
+                finish();
             }
         });
     }
