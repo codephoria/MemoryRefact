@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_wooden_dark"
+    tools:context=".BalloonActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/balloonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="4000px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/blackBalloons"
+            android:layout_width="189dp"
+            android:layout_height="274dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onBalloonClick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/black_balloons" />
+
+        <ImageView
+            android:id="@+id/blueBalloon"
+            android:layout_width="185dp"
+            android:layout_height="156dp"
+            android:onClick="onBalloonClick"
+            app:layout_constraintStart_toEndOf="@+id/blackBalloons"
+            app:layout_constraintTop_toBottomOf="@+id/blackBalloons"
+            app:srcCompat="@drawable/blue_balloon" />
+
+        <ImageView
+            android:id="@+id/colorBalloons"
+            android:layout_width="168dp"
+            android:layout_height="289dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="150dp"
+            android:onClick="onBalloonClick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/color_balloons" />
+
+        <ImageView
+            android:id="@+id/greenBalloon"
+            android:layout_width="104dp"
+            android:layout_height="214dp"
+            android:layout_marginTop="32dp"
+            android:onClick="onBalloonClick"
+            app:layout_constraintEnd_toStartOf="@+id/colorBalloons"
+            app:layout_constraintStart_toEndOf="@+id/blueBalloon"
+            app:layout_constraintTop_toBottomOf="@+id/blueBalloon"
+            app:srcCompat="@drawable/green_balloon" />
+
+        <ImageView
+            android:id="@+id/yellowBalloon"
+            android:layout_width="221dp"
+            android:layout_height="219dp"
+            android:layout_marginTop="132dp"
+            android:layout_marginEnd="148dp"
+            android:onClick="onBalloonClick"
+            app:layout_constraintEnd_toStartOf="@+id/greenBalloon"
+            app:layout_constraintTop_toBottomOf="@+id/blueBalloon"
+            app:srcCompat="@drawable/yellow_balloon" />
+
+        <ImageView
+            android:id="@+id/redBalloon"
+            android:layout_width="145dp"
+            android:layout_height="525dp"
+            android:layout_marginEnd="88dp"
+            android:onClick="onBalloonClick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/greenBalloon"
+            app:srcCompat="@drawable/red_balloon" />
+
+        <ImageView
+            android:id="@+id/colorBalloons2"
+            android:layout_width="202dp"
+            android:layout_height="380dp"
+            android:layout_marginTop="152dp"
+            android:onClick="onBalloonClick"
+            app:layout_constraintStart_toEndOf="@+id/yellowBalloon"
+            app:layout_constraintTop_toBottomOf="@+id/yellowBalloon"
+            app:srcCompat="@drawable/color_balloons" />
+
+        <ImageView
+            android:id="@+id/blueBalloon2"
+            android:layout_width="125dp"
+            android:layout_height="329dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:onClick="onBalloonClick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorBalloons2"
+            app:srcCompat="@drawable/blue_balloon" />
+
+        <ImageView
+            android:id="@+id/greenBalloon2"
+            android:layout_width="118dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="272dp"
+            android:onClick="onBalloonClick"
+            app:layout_constraintStart_toEndOf="@+id/colorBalloons2"
+            app:layout_constraintTop_toBottomOf="@+id/redBalloon"
+            app:srcCompat="@drawable/green_balloon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
