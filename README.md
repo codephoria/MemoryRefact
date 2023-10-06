@@ -1,4 +1,4 @@
 # Memory
 
-![Screenshot of the MemoryApp](https://github.com/codephoria/ProjectPictures/blob/main/memory.JPG)
+![Screenshot of the MemoryApp](https://github.com/codephoria/ProjectPictures/blob/main/memory.jpg)
  
